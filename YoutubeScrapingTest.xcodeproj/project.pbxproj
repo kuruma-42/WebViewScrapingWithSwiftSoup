@@ -13,6 +13,10 @@
 		0272DAD0275643310073E453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0272DACE275643310073E453 /* Main.storyboard */; };
 		0272DAD2275643330073E453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0272DAD1275643330073E453 /* Assets.xcassets */; };
 		0272DAD5275643330073E453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0272DAD3275643330073E453 /* LaunchScreen.storyboard */; };
+		0272DADD275649D30073E453 /* YoutubeScrapingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272DADC275649D30073E453 /* YoutubeScrapingViewController.swift */; };
+		0272DADF27564A1E0073E453 /* YoutubeScrapingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272DADE27564A1E0073E453 /* YoutubeScrapingModel.swift */; };
+		0272DAE127564A480073E453 /* YoutubeWebViewXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0272DAE027564A480073E453 /* YoutubeWebViewXib.xib */; };
+		0272DAE427564B660073E453 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0272DAE327564B660073E453 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		0272DAD1275643330073E453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0272DAD4275643330073E453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0272DAD6275643330073E453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0272DADC275649D30073E453 /* YoutubeScrapingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeScrapingViewController.swift; sourceTree = "<group>"; };
+		0272DADE27564A1E0073E453 /* YoutubeScrapingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeScrapingModel.swift; sourceTree = "<group>"; };
+		0272DAE027564A480073E453 /* YoutubeWebViewXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeWebViewXib.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0272DAE427564B660073E453 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,9 @@
 				0272DAD1275643330073E453 /* Assets.xcassets */,
 				0272DAD3275643330073E453 /* LaunchScreen.storyboard */,
 				0272DAD6275643330073E453 /* Info.plist */,
+				0272DADC275649D30073E453 /* YoutubeScrapingViewController.swift */,
+				0272DADE27564A1E0073E453 /* YoutubeScrapingModel.swift */,
+				0272DAE027564A480073E453 /* YoutubeWebViewXib.xib */,
 			);
 			path = YoutubeScrapingTest;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = YoutubeScrapingTest;
+			packageProductDependencies = (
+				0272DAE327564B660073E453 /* SwiftSoup */,
+			);
 			productName = YoutubeScrapingTest;
 			productReference = 0272DAC5275643310073E453 /* YoutubeScrapingTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 0272DABC275643310073E453;
+			packageReferences = (
+				0272DAE227564B660073E453 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 0272DAC6275643310073E453 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +145,7 @@
 				0272DAD5275643330073E453 /* LaunchScreen.storyboard in Resources */,
 				0272DAD2275643330073E453 /* Assets.xcassets in Resources */,
 				0272DAD0275643310073E453 /* Main.storyboard in Resources */,
+				0272DAE127564A480073E453 /* YoutubeWebViewXib.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0272DACD275643310073E453 /* ViewController.swift in Sources */,
+				0272DADD275649D30073E453 /* YoutubeScrapingViewController.swift in Sources */,
 				0272DAC9275643310073E453 /* AppDelegate.swift in Sources */,
+				0272DADF27564A1E0073E453 /* YoutubeScrapingModel.swift in Sources */,
 				0272DACB275643310073E453 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0272DAE227564B660073E453 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0272DAE327564B660073E453 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0272DAE227564B660073E453 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0272DABD275643310073E453 /* Project object */;
 }
